@@ -28,7 +28,7 @@ ticket_medio = (faturamento["Valor Final"] / Quantidade_Produtos["Quantidade"]).
 # enviar um email com relatorio
 outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
-mail.To = 'guilhermesantospereira01@gmail.com'
+mail.To = 'email'
 mail.Subject = 'Relatório de Vendas por Loja'
 mail.HTMLBody = f'''
 <p>Prezados,</p>
@@ -47,7 +47,7 @@ mail.HTMLBody = f'''
 
 <p>Att...</p>
 
-<p>Guilherme Santos</p>
+<p>......</p>
 
 '''
 
